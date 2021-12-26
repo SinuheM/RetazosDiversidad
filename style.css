@@ -109,6 +109,11 @@ body {
   width: 83%;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .hero__container {
+    width: 90%;
+  }
+}
 .hero__title {
   font-weight: 500;
   font-size: 32px;
@@ -118,6 +123,12 @@ body {
   margin-bottom: 50px;
   padding: 0 50px;
 }
+@media (max-width: 768px) {
+  .hero__title {
+    padding: 0;
+    font-size: 24px;
+  }
+}
 
 .presentation {
   padding: 90px 0;
@@ -126,6 +137,11 @@ body {
 .presentation__container {
   position: relative;
   padding: 100px;
+}
+@media (max-width: 768px) {
+  .presentation__container {
+    padding: 100px 70px;
+  }
 }
 .presentation__title {
   margin-top: -100px;
@@ -205,6 +221,11 @@ body {
 .partners {
   text-align: center;
   padding: 75px 100px;
+}
+@media (max-width: 768px) {
+  .partners {
+    padding: 75px 50px;
+  }
 }
 .partners__title {
   max-width: 630px;

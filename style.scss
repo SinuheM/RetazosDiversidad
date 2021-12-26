@@ -133,6 +133,10 @@ body {
   &__container {
     width: 83%;
     margin: 0 auto;
+
+    @media  (max-width: 768px) {
+      width: 90%;
+    }
   }
 
   &__title {
@@ -143,6 +147,11 @@ body {
     opacity: 1;
     margin-bottom: 50px;
     padding: 0 50px;
+
+    @media  (max-width: 768px) {
+      padding: 0;
+      font-size: 24px;
+    }
   }
 }
 
@@ -152,6 +161,10 @@ body {
   &__container {
     position: relative;
     padding: 100px;
+
+    @media  (max-width: 768px) {
+      padding: 100px 70px;
+    }
   }
 
   &__title {
@@ -243,6 +256,10 @@ body {
 .partners {
   text-align: center;
   padding: 75px 100px;
+
+  @media  (max-width: 768px) {
+    padding: 75px 50px;
+  }
   
   &__title {
     max-width: 630px;
