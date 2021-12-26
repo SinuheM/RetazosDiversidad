@@ -94,6 +94,11 @@ body {
 .nav__link:hover {
   color: #000;
 }
+@media (max-width: 768px) {
+  .nav__link {
+    display: none;
+  }
+}
 
 .hero {
   text-align: center;
@@ -134,6 +139,7 @@ body {
 }
 .presentation__video iframe {
   width: 100%;
+  max-width: 100%;
 }
 .presentation__video-img {
   height: 25px;
@@ -173,6 +179,11 @@ body {
   align-items: center;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .videos__regions {
+    flex-direction: column;
+  }
+}
 .videos__region-title {
   display: flex;
   align-items: center;
@@ -210,6 +221,19 @@ body {
 .partners__image {
   height: 60px;
   margin: 0 30px;
+}
+@media (max-width: 768px) {
+  .partners__image {
+    margin: 10px 30px;
+  }
+}
+@media (max-width: 768px) {
+  .partners__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .footer {
