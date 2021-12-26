@@ -106,11 +106,12 @@ body {
 }
 .hero__title {
   font-weight: 500;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 48px;
   color: #F3F4F6;
   opacity: 1;
   margin-bottom: 50px;
+  padding: 0 50px;
 }
 
 .presentation {
