@@ -98,7 +98,7 @@ body {
 .hero {
   text-align: center;
   padding: 130px 0;
-  background: #72264D;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/foto.jpg");
 }
 .hero__container {
   width: 83%;
@@ -109,7 +109,7 @@ body {
   font-size: 36px;
   line-height: 48px;
   color: #F3F4F6;
-  opacity: 0.75;
+  opacity: 1;
   margin-bottom: 50px;
 }
 
@@ -168,7 +168,7 @@ body {
 }
 .videos__regions {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
 }
