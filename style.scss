@@ -137,6 +137,26 @@ body {
     padding: 70px 0;
   }
 
+  &--project {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/foto4.jpg');
+    background-position: center;
+  }
+
+  &--scraps {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/foto7.jpg');
+    background-position: center;
+  }
+
+  &--impact {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/foto9.jpg');
+    background-position: center;
+  }
+
+  &--resources {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/foto10.jpg');
+    background-position: center;
+  }
+
   &__container {
     width: 83%;
     margin: 0 auto;
@@ -339,6 +359,15 @@ body {
     display: flex;
     text-align: center;
     padding: 50px 0 10px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__el {
+    margin: 20px 40px;
+    line-height: 2rem;
   }
 }
 
@@ -349,6 +378,15 @@ body {
     margin: 30px 0;
     padding-left: 20px;
     line-height: 2rem;
+  }
+}
+
+.technique {
+  padding: 70px 0;
+
+  &__data {
+    line-height: 2rem;
+    margin: 20px 0;
   }
 }
 
