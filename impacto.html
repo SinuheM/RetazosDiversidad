@@ -6,9 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Impacto | Retazos de diversidad</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/jpg" href="/img/favicon.ico"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+  <!-- <script src="https://code.highcharts.com/maps/modules/exporting.js"></script> -->
+  <script src="https://code.highcharts.com/mapdata/countries/pe/pe-all.js"></script>
+  <script src="js/pe-all.js"></script>
 </head>
 <body>
   <header class="header">
@@ -42,6 +47,16 @@
   <section class="impact">
     <div class="container">
       <h1 class="title">Cifras</h1>
+      <div class="impact__row">
+        <h2 class="impact__title">21 <br>Regiones</h2>
+        <div class="impact__map" id="mapcontainer"></div>
+        <div class="impact__quantity">
+          <p>69 jóvenes interesados</p>
+          <p>41 jóvenes interesados</p>
+          <p>36 jóvenes capacitados</p>
+          <p>20 jóvenes comprometidos</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -101,5 +116,9 @@
   <footer class="footer">
     © 2021 Retazos de diversidad. Todos los derechos reservados.
   </footer>
+
+  <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+  <script src="js/mapconfig.js"></script>
+
 </body>
 </html>

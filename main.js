@@ -26,4 +26,20 @@
       tabEl.classList.add('tabs__body-el--active')
     })
   }
+
+  var glideMulti1 = new Glide('.glide', {
+    type: 'carousel',
+    autoplay: 1500,
+    perView: 2,
+    focusAt: 'center',
+    breakpoints: {
+      800: {
+        perView: 1
+      },
+      480: {
+        perView: 1
+      }
+    }
+  });
+  glideMulti1.mount();
 })()
