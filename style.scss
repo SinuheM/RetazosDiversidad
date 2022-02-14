@@ -438,7 +438,7 @@ body {
   }
 
   &__img {
-    height: 150px;
+    height: auto;
     min-width: 350px;
     max-width: 100%;
 
@@ -542,9 +542,13 @@ body {
   }
 
   &__img {
-    height: 150px;
+    height: auto;
     min-width: 350px;
     max-width: 100%;
+
+    @media  (max-width: 768px) {
+      min-width: 200px;
+    }
   }
 }
 

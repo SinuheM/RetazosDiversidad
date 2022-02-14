@@ -383,7 +383,7 @@ body {
   }
 }
 .project__img {
-  height: 150px;
+  height: auto;
   min-width: 350px;
   max-width: 100%;
 }
@@ -481,9 +481,14 @@ body {
   }
 }
 .technique__img {
-  height: 150px;
+  height: auto;
   min-width: 350px;
   max-width: 100%;
+}
+@media (max-width: 768px) {
+  .technique__img {
+    min-width: 200px;
+  }
 }
 
 .experience {
