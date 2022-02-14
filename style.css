@@ -384,8 +384,13 @@ body {
 }
 .project__img {
   height: 150px;
-  min-width: 300px;
+  min-width: 350px;
   max-width: 100%;
+}
+@media (max-width: 768px) {
+  .project__img {
+    min-width: 200px;
+  }
 }
 
 .components {
@@ -477,7 +482,7 @@ body {
 }
 .technique__img {
   height: 150px;
-  min-width: 300px;
+  min-width: 350px;
   max-width: 100%;
 }
 
