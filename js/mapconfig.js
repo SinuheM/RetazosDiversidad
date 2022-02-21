@@ -1,83 +1,87 @@
-
 var data = [
-   ['pe-ic', 1],
-   ['pe-cs', 1],
-   ['pe-am', 1],
-   ['pe-lo', 1],
-   ['pe-ay', 1],
-   ['pe-145', 1],
-   ['pe-hv', 1],
-   ['pe-ju', 1],
-   ['pe-lr', 1],
-   ['pe-lb', 1],
-   ['pe-tu', 1],
-   ['pe-ap', 1],
-   ['pe-ar', 1],
-   ['pe-cl', 16],
-   ['pe-mq', 1],
-   ['pe-ta', 1],
-   ['pe-hc', 1],
-   ['pe-3341', 1],
-   ['pe-ll', 1],
-   ['pe-pa', 1],
-   ['pe-pu', 1],
-   ['pe-pi', 1]
-   // ['pe-uc', 2],
-   // ['pe-md', 3],
-   // ['pe-sm', 4],
-   // ['pe-an', 19],
-   // ['pe-cj', 20],
+  ["pe-ic", 1], // Ica
+  ["pe-cs", 1], // Cusco
+  ["pe-am", 1], // Amazonas
+  ["pe-lo", 1], // Loreto
+  ["pe-ay", 1], // Ayacucho
+  ["pe-145", 1], // Callao
+  ["pe-hv", 1], // Huancavelica
+  ["pe-ju", 1], // Junin
+  ["pe-lr", 1], // Lima
+  ["pe-lb", 1], // Lambayeque
+  ["pe-tu", 1], // Tumbes
+  ["pe-ap", 1], // Apurimac
+  ["pe-ar", 1], // Arequipa
+  ["pe-cl", 16], // Puno
+  ["pe-mq", 1], // Moquegua
+  ["pe-ta", 1], // Tacna
+  ["pe-hc", 1], // Huanuco
+  ["pe-3341", 1], // Callao
+  ["pe-ll", 1], // La libertad
+  ["pe-pa", 1], // Pasco
+  ["pe-pu", 1], // 
+  ["pe-pi", 1], // Piura
+  // ['pe-uc', 2],
+  // ['pe-md', 3],
+  // ['pe-sm', 4],
+  // ['pe-an', 19],
+  // ['pe-cj', 20],
 ];
 
+const handleChangeMap = (selected) => {
+  const selectedClass = 'impact__people--selected';
+  const toSelectClass = `impact__people--${selected}`;
+
+  const oldSelected = document.getElementsByClassName(selectedClass);
+  if (oldSelected.length > 0 ){
+    oldSelected[0].classList.remove(selectedClass)
+  }
+
+  const toSelect = document.getElementsByClassName(toSelectClass);
+  if (toSelect.length > 0 ){
+    toSelect[0].classList.add(selectedClass)
+  }
+}
 
 // Create the chart
-if(document.getElementById('mapcontainer')){
- Highcharts.mapChart('mapcontainer', {
-     chart: { map: 'countries/pe/pe-all' },
-     title: { text: '' },
-     subtitle: { text: '' },
-     credits: { enabled: false },
-     legend: { enabled: false },
-     exporting: { buttons: { contextButton: { enabled: false } } },
-     mapNavigation: { enabled: false },
-     tooltip: { headerFormat: '', pointFormat: '{point.name}' },
-     series: [{
-         data: data,
-         name: '',
-         states: {
-             hover: {
-                 color: '#5C5B5F'
-             }
-         },
-         dataLabels: {
-             enabled: true,
-             format: '{point.name}'
-         }
-     }]
- 
-     /* plotOptions: {
-         heatmap: {
-             cursor: "pointer"
-         },
-         series: {
-             events: {
-                 click: function(e) {
-                     // console.log(e)
- 
-                     var posi = $("#faccontainer").offset().top;
-                     //$('html, body').animate({ scrollTop: posi - 50 }, 500, 'linear');
- 
-                     let ciudades = $('.people-city');
-                     for (let index = 0; index < ciudades.length; index++) {
-                         const el = ciudades[index];
-                         $(el).addClass("hidden");
-                     }
-                     $('#people'+e.point.options.value).removeClass("hidden");
-                     
-                     //$('#nombre-map').text(e.point.options.nombres);
-                 }
-             }
-         }
-     } */
- });
+if (document.getElementById("mapcontainer")) {
+  Highcharts.mapChart("mapcontainer", {
+    chart: { map: "countries/pe/pe-all", backgroundColor: "#72264D" },
+    title: { text: "" },
+    subtitle: { text: "" },
+    credits: { enabled: false },
+    legend: { enabled: false },
+    exporting: { buttons: { contextButton: { enabled: false } } },
+    mapNavigation: { enabled: false },
+    tooltip: { headerFormat: "", pointFormat: "{point.name}" },
+    series: [
+      {
+        nullColor: "#745163b2",
+        color: "#b35e25da",
+        borderColor: "#ffbf009e",
+        data,
+        name: "",
+        states: {
+          hover: {
+            color: "#B35E25",
+          },
+          select: {
+            color: "#B35E25",
+          },
+          inactive: {
+              opacity: 1
+          }
+        },
+        dataLabels: {
+          enabled: true,
+          format: "{point.name}",
+        },
+        events: {
+          click: function(e) {
+            handleChangeMap(e.point.options['hc-key'])
+          }
+        }
+      },
+    ]
+  });
 }

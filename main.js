@@ -27,19 +27,27 @@
     })
   }
 
-  var glideMulti1 = new Glide('.glide', {
-    type: 'carousel',
-    autoplay: 1500,
-    perView: 2,
-    focusAt: 'center',
-    breakpoints: {
-      800: {
-        perView: 1
-      },
-      480: {
-        perView: 1
+  if (window.Glide !== undefined) {
+    var glideMulti1 = new Glide('.glide', {
+      type: 'carousel',
+      autoplay: 1500,
+      perView: 2,
+      focusAt: 'center',
+      breakpoints: {
+        800: {
+          perView: 1
+        },
+        480: {
+          perView: 1
+        }
       }
-    }
-  });
-  glideMulti1.mount();
+    });
+    glideMulti1.mount();
+  }
+
+  const navButton = document.getElementById('mobileButton');
+  const navMobile = document.getElementById('mobileNav');
+  navButton.addEventListener('click', function() {
+    navMobile.classList.toggle('mobile-nav--open');
+  })
 })()

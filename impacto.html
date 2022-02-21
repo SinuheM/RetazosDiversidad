@@ -19,7 +19,8 @@
   <header class="header">
     <div class="nav-us container">
       <img src="img/logo-bicentenario.png" alt="" class="logo--bicentenario">
-      <a href="https://www.facebook.com/SemillaIntercultural" target="_blank" class="btn btn--secondary">Únete</a>
+      <a href="https://www.facebook.com/SemillaIntercultural" target="_blank" class="btn btn--secondary hide-sm">Únete</a>
+      <button class="btn btn--nav" id="mobileButton""">☰</button>
     </div>
     <nav class="nav">
       <ul class="nav__list">
@@ -34,12 +35,64 @@
         <li class="nav__el"><a class="nav__link" href="/recursos.html">Recursos</a></li>
       </ul>
     </nav>
+    <nav class="mobile-nav" id="mobileNav">
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__el"><a class="mobile-nav__link" href="/proyecto.html">Proyecto</a></li>
+        <li class="mobile-nav__el"><a class="mobile-nav__link" href="/retazos.html">Retazos</a></li>
+        <li class="mobile-nav__el"><a class="mobile-nav__link" href="/impacto.html">Impacto</a></li>
+        <li class="mobile-nav__el"><a class="mobile-nav__link" href="/recursos.html">Recursos</a></li>
+        <li class="mobile-nav__el"><a class="mobile-nav__link" href="https://www.facebook.com/SemillaIntercultural" target="_blank">Únete</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section class="hero hero--sub hero--impact">
     <div class="container">
       <div class="hero__container">
-        <p class="hero__title hero__title--sub">Paper stop-motion de la diversidad de jóvenes peruan@s por la ciudadanía intercultural en tiempos del Bicentenario del Perú</p>
+        <p class="hero__title hero__title--sub">Las y los jóvenes estamos llamados a velar por nuestra diversidad cultural, (re)conócenos…</p>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="assemble">
+    <div class="container">
+      <div class="assemble__row2">
+        <div class="assemble__text">
+          <h1 class="title">L@s convocad@s</h1>
+          <p class="p">Los participantes de RETAZOS DE DIVERSIDAD son jóvenes de 18 a 29 años de los 24 departamentos y la provincia constitucional del Perú interesados en compartir su cultura a través de la técnica del stop motion.</p>
+        </div>
+        <ul class="assemble__box">
+          <li class="assemble__box-el">
+            <p>
+              <span>69</span>
+              jóvenes interesados
+            </p>
+          </li>
+          <li class="assemble__box-el">
+            <p>
+              <span>47</span>
+              jóvenes sensibilizados
+            </p>
+          </li>
+          <li class="assemble__box-el">
+            <p>
+              <span>36</span>
+              jóvenes capacitados
+            </p>
+          </li>
+          <li class="assemble__box-el">
+            <p>
+              <span>23</span>
+              jóvenes comprometidos
+            </p>
+          </li>
+          <li class="assemble__box-el">
+            <p>
+              <span>12</span>
+              animaciones expuestas
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -47,22 +100,168 @@
   <section class="impact">
     <div class="container">
       <h1 class="title">Cifras</h1>
-      <div class="impact__row">
-        <h2 class="impact__title">21 <br>Regiones</h2>
-        <div class="impact__map" id="mapcontainer"></div>
-        <div class="impact__quantity">
-          <p>69 jóvenes interesados</p>
-          <p>41 jóvenes interesados</p>
-          <p>36 jóvenes capacitados</p>
-          <p>20 jóvenes comprometidos</p>
+      <div class="impact__row impact__region">
+        <div class="impact_header">
+          <h2 class="impact__title">21 <br>Regiones</h2>
+          <p class="impact__info">Selecciona una para ver a los participantes</p>
+          <div class="impact_participant">
+            <div class="impact__people impact__people--pe-tu">
+              <h3 class="subtitle">Tumbes:</h3>
+              <ul class="impact__people-list">
+                <li>Cristian Daniel Vega Lizana</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-pi">
+              <h3 class="subtitle">Piura:</h3>
+              <ul class="impact__people-list">
+                <li>Stephany Teresa Carmona Olivos</li>
+                <li>Lourdes Fabiola Juarez Gomez</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-ll">
+              <h3 class="subtitle">La Libertad:</h3>
+              <ul class="impact__people-list">
+                <li>Diana Isabel Asto Paredes</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-lb">
+              <h3 class="subtitle">Lambayeque:</h3>
+              <ul class="impact__people-list">
+                <li>Deysi Yessenia Torres Lluen</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-lr">
+              <h3 class="subtitle">Lima:</h3>
+              <ul class="impact__people-list">
+                <li>Alicia Luz Mery Mayhuasca Gamboa</li>
+                <li>Frescia Tamara Nilupu Moreno</li>
+                <li>Maria Alejandra Roca Lagos</li>
+                <li>Briseth Alexa Villanueva Chávez</li>
+                <li>Scott Martin Diaz Ramirez</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-145">
+              <h3 class="subtitle">Callao:</h3>
+              <ul class="impact__people-list">
+                <li>Elithe Liliana Gihua Suppé</li>
+                <li>Joseline Karina Pereda Benites</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-ic">
+              <h3 class="subtitle">Ica:</h3>
+              <ul class="impact__people-list">
+                <li>Mirella Fransheska Alpaca La Rosa</li>
+                <li>Percy Abel Gonzales Huarcaya</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-ar">
+              <h3 class="subtitle">Arequipa:</h3>
+              <ul class="impact__people-list">
+                <li>Eva Mary Puma Puma</li>
+                <li>Alis Matilde Toledo Yataco</li>
+                <li>Diana Rossangela Parillo Durand</li>
+                <li>Mauricio José Amado Gonzales</li>
+                <li>Andrea Camila Gonzales Barreda</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-mq">
+              <h3 class="subtitle">Moquegua:</h3>
+              <ul class="impact__people-list">
+                <li>Cielo Nicol Choque Velásquez </li>
+                <li>Bertha Gimena Ventura Ramos</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-ta">
+              <h3 class="subtitle">Tacna:</h3>
+              <ul class="impact__people-list">
+                <li>Yesica Lizbeth Mamani Acero</li>
+                <li>Jhoselin Alejandra Ticona Choqueña</li>
+                <li>Erika Maribel Aguilar Barreto</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-cs">
+              <h3 class="subtitle">Cusco:</h3>
+              <ul class="impact__people-list">
+                <li>Harodl Sandro Dianderas Osorio</li>
+                <li>Vivianne Adriana Cari Villa</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-cl">
+              <h3 class="subtitle">Puno:</h3>
+              <ul class="impact__people-list">
+                <li>Anel Luzmi Puma Yucra</li>
+                <li>Abel Christian Apaza Amanqui</li>
+                <li>Yeni Madera Arnao</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-ap">
+              <h3 class="subtitle">Apurímac:</h3>
+              <ul class="impact__people-list">
+                <li>Roberth de Niro Torres Bences</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-ay">
+              <h3 class="subtitle">Ayacucho:</h3>
+              <ul class="impact__people-list">
+                <li>Trilce Rosalia Cielo Peralta Contreras</li>
+                <li>Joel Alfredo Paucar Cárdenas</li>
+                <li>Susan Marjhory Flores Blanco</li>
+                <li>Brenda Diana Cahuana Ccorahua</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-hv">
+              <h3 class="subtitle">Huancavelica:</h3>
+              <ul class="impact__people-list">
+                <li>Kety Deysi Alanya Suaznabar</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-ju">
+              <h3 class="subtitle">Junín:</h3>
+              <ul class="impact__people-list">
+                <li>Angel Gabriel Orihuela Pichihua</li>
+                <li>Taheret Tirza Silva Taipe</li>
+                <li>Michael Ascencion Mendoza</li>
+                <li>Natalia Romero Fernandez</li>
+                <li>Rocio Paola Iparraguirre Sandoval</li>
+                <li>Cristhian Fraiser Yapias Oscanoa</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-pa">
+              <h3 class="subtitle">Pasco:</h3>
+              <ul class="impact__people-list">
+                <li>Alberto Ciriaco Jhunior Gabriel</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-hc">
+              <h3 class="subtitle">Huánuco:</h3>
+              <ul class="impact__people-list">
+                <li>María Haydeé Guerra Berrios</li>
+                <li>Juan Heraclio Terreros Acevedo</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-am">
+              <h3 class="subtitle">Amazonas:</h3>
+              <ul class="impact__people-list">
+                <li>Johann Addinson Vasquez Aguilar</li>
+                <li>María del Carmen Huamán Cachi</li>
+              </ul>
+            </div>
+            <div class="impact__people impact__people--pe-lo">
+              <h3 class="subtitle">Loreto:</h3>
+              <ul class="impact__people-list">
+                <li>Jean Pierre Orozco Ruiz</li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <div class="impact__map" id="mapcontainer"></div>
       </div>
     </div>
   </section>
 
   <section class="testimonials">
     <div class="container">
-      <h2 class="subtitle">Testimonios</h2>
+      <h2 class="title">Testimonios</h2>
       <ul class="testimonials__list">
         <li class="testimonials__el">
           <iframe width="560" height="400"
@@ -128,6 +327,6 @@
 
   <script src="https://code.highcharts.com/maps/highmaps.js"></script>
   <script src="js/mapconfig.js"></script>
-
+  <script src="main.js"></script>
 </body>
 </html>
